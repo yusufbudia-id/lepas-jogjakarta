@@ -1,0 +1,6 @@
+Baseline: LEPAS Jogja master thin glass header
+Changes:
+- Header Book Test Drive CTA changed to warm amber/orange (#F2A23A).
+- Journal rebuilt as compact asymmetrical editorial grid.
+- No rounded journal cards; uses images, hairline dividers, one lead story + three compact rows.
+- Other homepage sections and product detail pages unchanged.

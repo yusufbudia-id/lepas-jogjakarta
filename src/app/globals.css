@@ -1,0 +1,25 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+:root { --background:#f5f1e8; --foreground:#10211c; }
+* { box-sizing:border-box; }
+html { scroll-behavior:smooth; }
+body { margin:0; background:var(--background); color:var(--foreground); font-family:var(--font-jakarta),Arial,sans-serif; }
+::selection { background:#d6bd8a; color:#10211c; }
+a { text-decoration:none; }
+.eyebrow { font-size:.72rem; line-height:1rem; text-transform:uppercase; letter-spacing:.28em; font-weight:800; color:#8b7045; }
+.input { width:100%; border:1px solid rgba(16,33,28,.14); border-radius:.85rem; background:#faf8f3; padding:.9rem 1rem; outline:none; }
+.input:focus { border-color:#8b7045; }
+.article-content h3 { margin-top:2rem; margin-bottom:.75rem; font-size:1.6rem; line-height:1.3; font-weight:700; color:#10211c; }
+.article-content p { margin:0 0 1.25rem; }
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-motion-video {
+    display: none;
+  }
+}
+
+.e4-color-layout { display:grid; grid-template-columns:1fr; }
+@media (min-width:1024px) {
+  .e4-color-layout { grid-template-columns:minmax(0,1.28fr) minmax(300px,.72fr); align-items:stretch; }
+}
