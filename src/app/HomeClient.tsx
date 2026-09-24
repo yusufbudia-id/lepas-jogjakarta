@@ -204,6 +204,78 @@ export default function HomeClient(){
     </div>
    </section>
 
+   <section id="why-lepas-jogja" className="border-y border-[#10211c]/10 bg-[#eee5d6] px-5 py-16 text-[#10211c] sm:py-20 lg:px-8 lg:py-24">
+    <div className="mx-auto max-w-7xl">
+      <div className="grid gap-7 lg:grid-cols-[1.02fr_.98fr] lg:items-end">
+        <div>
+          <p className="text-[10px] font-bold uppercase tracking-[.34em] text-[#8a6c3f]">Why LEPAS Jogjakarta</p>
+          <h2 className="mt-4 max-w-3xl text-4xl font-medium leading-[1.03] tracking-[-.04em] sm:text-5xl lg:text-6xl">
+            Kenapa beli LEPAS di Jogja?
+          </h2>
+        </div>
+        <p className="max-w-xl text-sm leading-7 text-[#10211c]/60 sm:text-base lg:justify-self-end">
+          Memilih mobil bukan hanya soal spesifikasi. Dari membandingkan E4 dan L8 sampai test drive serta pilihan pembiayaan, prosesnya bisa dimulai dari satu kontak lokal.
+        </p>
+      </div>
+
+      <div className="mt-10 grid border-y border-[#10211c]/14 md:grid-cols-2 lg:grid-cols-4">
+        {[
+          {
+            no:'01',
+            title:'Konsultasi lokal',
+            text:'Tanyakan model, harga OTR Yogyakarta, ketersediaan unit, dan kebutuhan penggunaan langsung dari satu kontak.'
+          },
+          {
+            no:'02',
+            title:'Pilih E4 atau L8',
+            text:'Bandingkan karakter BEV dan PHEV agar pilihan lebih sesuai dengan rutinitas, perjalanan, dan preferensi Anda.'
+          },
+          {
+            no:'03',
+            title:'Test drive lebih mudah',
+            text:'Atur jadwal test drive dan cek model yang tersedia sebelum datang ke lokasi LEPAS Yogyakarta.'
+          },
+          {
+            no:'04',
+            title:'Pembiayaan lebih terarah',
+            text:'Mulai dari rencana DP dan tenor, lalu minta simulasi berdasarkan opsi pembiayaan yang sedang tersedia.'
+          }
+        ].map((item,index)=>(
+          <div
+            key={item.no}
+            className={`py-7 md:px-7 lg:min-h-[230px] lg:py-8 ${index%2===0?'md:border-r':''} ${index<2?'border-b md:border-b':''} border-[#10211c]/10 lg:border-b-0 lg:border-r last:lg:border-r-0 first:md:pl-0 first:lg:pl-0`}
+          >
+            <div className="text-[9px] font-bold uppercase tracking-[.28em] text-[#8a6c3f]">{item.no}</div>
+            <h3 className="mt-5 text-xl font-semibold tracking-[-.025em] sm:text-2xl">{item.title}</h3>
+            <p className="mt-3 text-sm leading-7 text-[#10211c]/58">{item.text}</p>
+          </div>
+        ))}
+      </div>
+
+      <div className="mt-8 flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
+        <p className="max-w-2xl text-xs leading-6 text-[#10211c]/48">
+          Informasi harga, ketersediaan unit, promo, dan pembiayaan dapat berubah mengikuti kondisi serta program yang berlaku.
+        </p>
+        <div className="flex flex-wrap gap-3">
+          <button
+            onClick={()=>openWhatsApp('Halo LEPAS Jogjakarta, saya ingin konsultasi sebelum membeli LEPAS. Mohon bantu saya membandingkan E4 dan L8, cek harga OTR Yogyakarta, ketersediaan unit, serta jadwal test drive.')}
+            className="group inline-flex items-center gap-3 rounded-full bg-[#10211c] px-6 py-3.5 text-sm font-extrabold text-white transition hover:bg-[#1a2f29]"
+          >
+            Konsultasi LEPAS Jogjakarta
+            <ArrowRight size={16} className="transition-transform group-hover:translate-x-1"/>
+          </button>
+          <Link
+            href="/simulasi-kredit"
+            className="group inline-flex items-center gap-3 rounded-full border border-[#10211c]/18 px-6 py-3.5 text-sm font-extrabold text-[#10211c] transition hover:border-[#b8955c]/70 hover:bg-white/45"
+          >
+            Pilihan Pembiayaan
+            <ArrowRight size={16} className="transition-transform group-hover:translate-x-1"/>
+          </Link>
+        </div>
+      </div>
+    </div>
+   </section>
+
    <section id="ownership" className="scroll-mt-20 bg-[#f4efe5] px-5 py-20 text-[#10211c] sm:py-24 lg:px-8 lg:py-28">
     <div className="mx-auto max-w-7xl">
       <div className="overflow-hidden rounded-[2rem] border border-[#10211c]/10 bg-[#fbf7ef] lg:grid lg:grid-cols-[.92fr_1.08fr]">
