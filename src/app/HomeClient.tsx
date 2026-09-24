@@ -8,7 +8,7 @@ import { articles } from '@/lib/articles-data';
 import { openWhatsApp } from '@/lib/whatsapp';
 
 export default function HomeClient(){
- const chatL8=()=>openWhatsApp('Halo LEPAS Jogja, saya ingin konsultasi LEPAS L8. Mohon info harga OTR Jogja, promo, dan jadwal test drive terbaru.');
+ const chatGeneral=()=>openWhatsApp('Halo LEPAS Jogjakarta, saya ingin mengenal model LEPAS yang tersedia. Mohon info LEPAS E4 dan L8, harga OTR Yogyakarta, promo, ketersediaan unit, dan jadwal test drive terbaru.');
  const [activeTech,setActiveTech]=useState(0);
  const techItems=[
   {kicker:'01 / Cockpit',title:'Intelligent Cockpit',text:'Informasi dan kendali utama ditata agar terasa dekat, jelas, dan mudah dijangkau.',image:'/images/technology/e4-dashboard.webp',alt:'LEPAS E4 dashboard and front cabin'},
@@ -40,24 +40,24 @@ export default function HomeClient(){
     <div className="pointer-events-none absolute inset-0 bg-[linear-gradient(90deg,rgba(5,12,10,.94)_0%,rgba(5,12,10,.78)_29%,rgba(5,12,10,.36)_52%,rgba(5,12,10,.06)_78%)]"/>
     <div className="pointer-events-none absolute inset-0 bg-[linear-gradient(0deg,rgba(5,12,10,.93)_0%,rgba(5,12,10,.20)_34%,rgba(5,12,10,.08)_68%,rgba(5,12,10,.40)_100%)] md:bg-[linear-gradient(0deg,rgba(5,12,10,.62)_0%,transparent_36%,rgba(5,12,10,.20)_100%)]"/>
     <div className="pointer-events-none absolute inset-y-0 left-[48%] hidden w-px bg-gradient-to-b from-transparent via-[#d6bd8a]/22 to-transparent xl:block"/>
-    <div className="pointer-events-none absolute -right-12 top-[16%] hidden select-none text-[23vw] font-medium leading-none tracking-[-.09em] text-white/[.025] lg:block">L8</div>
+    <div className="pointer-events-none absolute -right-12 top-[16%] hidden select-none text-[18vw] font-medium leading-none tracking-[-.09em] text-white/[.025] lg:block">LEPAS</div>
 
     <div className="relative mx-auto flex min-h-[100svh] max-w-7xl items-end px-5 pb-24 pt-32 sm:px-7 md:items-center md:pb-12 lg:px-8">
       <div className="relative z-20 max-w-[660px]">
         <div className="mb-7 border-l border-[#d6bd8a]/80 pl-4 sm:mb-9 sm:pl-5">
-          <div className="text-[10px] font-bold uppercase tracking-[.34em] text-[#e5c98f] sm:text-xs">Premium Super Hybrid SUV</div>
-          <div className="mt-2 text-2xl font-medium tracking-[.06em] text-[#f8f4eb] sm:text-3xl">LEPAS L8</div>
-          <div className="mt-1.5 text-[10px] uppercase tracking-[.22em] text-white/48 sm:text-xs">Leopard Aesthetics</div>
+          <div className="text-[10px] font-bold uppercase tracking-[.34em] text-[#e5c98f] sm:text-xs">New Energy Vehicle · Yogyakarta</div>
+          <div className="mt-2 text-2xl font-medium tracking-[.06em] text-[#f8f4eb] sm:text-3xl">LEPAS JOGJAKARTA</div>
+          <div className="mt-1.5 text-[10px] uppercase tracking-[.22em] text-white/48 sm:text-xs">Electrified Elegance</div>
         </div>
 
         <h1 className="max-w-2xl text-[clamp(3.35rem,7.4vw,7.6rem)] font-medium leading-[.87] tracking-[-.06em]">
           Drive Your<br/><span className="font-light italic text-[#dfc691]">Elegance.</span>
         </h1>
-        <p className="mt-7 max-w-[530px] text-[15px] leading-7 text-white/68 sm:text-lg sm:leading-8">Performa super hybrid premium yang memadukan tenaga, jarak tempuh panjang, teknologi cerdas, dan kenyamanan elegan.</p>
+        <p className="mt-7 max-w-[560px] text-[15px] leading-7 text-white/68 sm:text-lg sm:leading-8">Temukan generasi baru kendaraan LEPAS yang memadukan desain elegan, teknologi cerdas, dan elektrifikasi untuk pengalaman berkendara modern.</p>
 
         <div className="mt-8 flex flex-wrap gap-3 sm:mt-10">
-          <Link href="/produk/lepas-l8-jogja" className="group flex items-center gap-3 rounded-full bg-[#dfc691] px-6 py-3.5 text-sm font-extrabold text-[#10211c] transition duration-300 hover:bg-[#edd8ab] sm:px-7 sm:py-4">Explore L8 <ArrowRight size={17} className="transition-transform group-hover:translate-x-1"/></Link>
-          <button onClick={chatL8} className="rounded-full border border-white/25 bg-black/10 px-6 py-3.5 text-sm font-bold text-white backdrop-blur-md transition duration-300 hover:border-[#d6bd8a]/60 hover:bg-black/25 sm:px-7 sm:py-4">Book Test Drive</button>
+          <Link href="/produk" className="group flex items-center gap-3 rounded-full bg-[#dfc691] px-6 py-3.5 text-sm font-extrabold text-[#10211c] transition duration-300 hover:bg-[#edd8ab] sm:px-7 sm:py-4">Lihat Semua Model <ArrowRight size={17} className="transition-transform group-hover:translate-x-1"/></Link>
+          <button onClick={chatGeneral} className="rounded-full border border-white/25 bg-black/10 px-6 py-3.5 text-sm font-bold text-white backdrop-blur-md transition duration-300 hover:border-[#d6bd8a]/60 hover:bg-black/25 sm:px-7 sm:py-4">Book Test Drive</button>
         </div>
       </div>
 
@@ -65,8 +65,8 @@ export default function HomeClient(){
         <span className="h-px w-14 bg-[#d6bd8a]/55"/> Scroll to discover
       </div>
       <div className="pointer-events-none absolute right-8 top-28 hidden text-right lg:block">
-        <div className="text-[9px] font-bold uppercase tracking-[.32em] text-[#d6bd8a]/60">PHEV / L8</div>
-        <div className="mt-2 text-[10px] uppercase tracking-[.18em] text-white/28">Super Hybrid Mobility</div>
+        <div className="text-[9px] font-bold uppercase tracking-[.32em] text-[#d6bd8a]/60">BEV · PHEV / LEPAS</div>
+        <div className="mt-2 text-[10px] uppercase tracking-[.18em] text-white/28">New Energy Mobility</div>
       </div>
     </div>
    </section>
