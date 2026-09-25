@@ -1,0 +1,147 @@
+[
+  {
+    "file": "awaken-green.webp",
+    "original_size": [
+      1600,
+      1067
+    ],
+    "original_alpha_bbox": [
+      320,
+      395,
+      1230,
+      881
+    ],
+    "crop_box": [
+      160,
+      313,
+      1390,
+      963
+    ],
+    "output_size": [
+      1230,
+      650
+    ],
+    "output_alpha_bbox": [
+      160,
+      82,
+      1070,
+      568
+    ]
+  },
+  {
+    "file": "phantom-grey.webp",
+    "original_size": [
+      1600,
+      1067
+    ],
+    "original_alpha_bbox": [
+      320,
+      395,
+      1230,
+      881
+    ],
+    "crop_box": [
+      160,
+      313,
+      1390,
+      963
+    ],
+    "output_size": [
+      1230,
+      650
+    ],
+    "output_alpha_bbox": [
+      160,
+      82,
+      1070,
+      568
+    ]
+  },
+  {
+    "file": "black.webp",
+    "original_size": [
+      1600,
+      1067
+    ],
+    "original_alpha_bbox": [
+      320,
+      395,
+      1230,
+      881
+    ],
+    "crop_box": [
+      160,
+      313,
+      1390,
+      963
+    ],
+    "output_size": [
+      1230,
+      650
+    ],
+    "output_alpha_bbox": [
+      160,
+      82,
+      1070,
+      568
+    ]
+  },
+  {
+    "file": "white.webp",
+    "original_size": [
+      1600,
+      1067
+    ],
+    "original_alpha_bbox": [
+      320,
+      395,
+      1230,
+      881
+    ],
+    "crop_box": [
+      160,
+      313,
+      1390,
+      963
+    ],
+    "output_size": [
+      1230,
+      650
+    ],
+    "output_alpha_bbox": [
+      160,
+      82,
+      1070,
+      568
+    ]
+  },
+  {
+    "file": "moonlight-silver.webp",
+    "original_size": [
+      1600,
+      1067
+    ],
+    "original_alpha_bbox": [
+      320,
+      395,
+      1230,
+      881
+    ],
+    "crop_box": [
+      160,
+      313,
+      1390,
+      963
+    ],
+    "output_size": [
+      1230,
+      650
+    ],
+    "output_alpha_bbox": [
+      160,
+      82,
+      1070,
+      568
+    ]
+  }
+]

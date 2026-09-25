@@ -1,0 +1,21 @@
+LEPAS JOGJAKARTA — E4 COLOR IMAGE CROP PATCH
+
+PATCH ONLY — hanya mengganti 5 asset warna E4:
+- public/images/e4-detail/colors/awaken-green.webp
+- public/images/e4-detail/colors/phantom-grey.webp
+- public/images/e4-detail/colors/black.webp
+- public/images/e4-detail/colors/white.webp
+- public/images/e4-detail/colors/moonlight-silver.webp
+
+Apa yang berubah:
+- Canvas asli 1600x1067 dipangkas menjadi 1230x650.
+- Area mobil asli sekitar 910x486, sehingga mobil sekarang mengisi kira-kira 74% lebar preview.
+- Crop yang sama dipakai untuk semua warna agar ukuran/posisi tidak berubah saat mengganti warna.
+- Transparansi dipertahankan.
+- page.tsx, selector warna, dan layout tidak diubah.
+
+Cara pasang:
+1. Extract ZIP ke root project.
+2. Overwrite 5 file WebP di atas.
+3. Jalankan npm run dev.
+4. Hard refresh bila browser masih menampilkan gambar lama.
